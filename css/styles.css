@@ -1,0 +1,22 @@
+h1 {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.container-fluid{
+  padding: 0% 15% 0% 15%;
+}
+
+.cstm-height-card .card-img-top {
+  height: 100px;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+.carousel-multi-item-2 .col-md-3 {
+float: left;
+width: 25%;
+max-width: 100%; } }
+
+.carousel-multi-item-2 .card img {
+border-radius: 2px; }

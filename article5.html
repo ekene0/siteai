@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Site AI</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:400,700|Ubuntu:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="favicon.ico">
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+
+    <!-- Nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">Site AI</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="articles.html">ARTICLES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">PROJECTS</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container-fluid">
+    <img src="images/light.jpg" style="width:1008px; height:400px;" alt="">
+    <h1>Our choice LiDAR</h1>
+    <h5>Authors: Miracle C. Nkemdirim & Ekene A. Okonkwo</h5>
+    <h6>Faculty of Electrical Engineering, University of Ottawa, ON K1N 6Y7, Canada</h6>
+    <hr>
+    <h6>What is LIDAR ?</h6>
+    <p>When it comes to distance or object sensing, there are a lot of options currently in the market. From RADAR to Sonar to ultrasonic sensors, with applications in several fields like conveyor systems, to mobile systems and vehicular systems. In
+      self-driving vehicles, LiDAR and RADAR seem to be leading the way in the development of this field. The robot provided by the client was already equipped with Infrared sensors but after much deliberation, our team decided to add a more
+      effective and modern technology in the form of LiDAR. It emits infrared light pulses instead of radio waves and measures how long they take to come back after hitting nearby objects. The time between the output laser and the reflected pulse
+      allows the LiDAR sensor to calculate the distance to each object precisely, based on the speed of light. The LiDAR then returns the reading in a spherical coordinate system.
+
+      This is done by defining a point with radius r, elevation, and azimuth. Elevation angle, ω is in the Z-Y plane measured from Y-axis.Azimuth angle, α is in the X-Y plane measured from Y-axis. Azimuth angle depends upon the position at which a
+      laser is fired and is registered at the time of firing. The Elevation angle for a laser emitter is fixed in a sensor. The radius is calculated using the time taken by the beam to come back.
+    </p>
+
+    <img src="images/li1.png" style="width:300px; height:200px; margin-left: auto; margin-right: auto; display: block; margin-top: 20px; margin-bottom: 20px;">
+
+    <p>As the Cartesian coordinate system is easier to work with, the spherical system can be converted to Cartesian using the equations below:
+      The drivers of LiDAR sensors usually do this so computation of this isn’t necessary.
+      This technology is superior to RADAR in the sense that it offers precise 3D measurement data over short to long ranges in the most difficult conditions while the latter lacks when it comes to resolution and struggles when mapping out finer
+      details. Therefore, it is a much better choice when it comes to autonomous vehicles.
+      The LiDAR comes in different types: unidirectional and 360 omnidirectional.The unidirectional offers a field of view in only one direction. Therefore, if the robot is equipped with this, 4 are needed to equip on each side of the robot
+      structure. This has certain drawbacks particularly due to the introduction of blind spots as the sensors might not be able to cover the full field of vision of the robot.
+    </p>
+
+    <img src="images/li2.png" style="width:300px; height:400px; margin-left: auto; margin-right: auto; display: block; margin-top: 20px; margin-bottom: 20px;">
+
+    <p>
+      The 360 omnidirectional on the other hand needs only to be mounted on top of the robot structure and has a complete view of all the surroundings thereby eliminating the risk of any blind spots.
+    </p>
+
+    <img src="images/li3.png" style="width:300px; height:400px; margin-left: auto; margin-right: auto; display: block; margin-top: 20px; margin-bottom: 20px;">
+
+    <p>After searching the market for the different products, two specific ones were narrowed down for each; the TFmini LiDAR and DE-LIDAR TF02 for the unidirectional and the RPLIDAR A1M8 and RPLIDAR S1-360 for the 360 omnidirectional. In conclusion,
+      the best choice would be the RPLIDAR A1M8 because of its sensing prowess and low-cost.</p>
+    <h6>Web References</h6>
+    <p> [1] https://www.ucsusa.org/resources/self-driving-cars-101</p>
+    <p>[2] https://hackernoon.com/lidar-basics-the-coordinate-system-a26529615df9</p>
+    <p>[3] https://www.robotshop.com/en/rplidar-a1m8-360-degree-laser-scanner-development-kit.html</p>
+
+  </div>
+
+  <div class="container-fluid">
+    <footer class="app-footer text-center bg-dark">
+      <div>
+        <span style="color: white;">&copy; 2020 Site AI</span>
+      </div>
+    </footer>
+  </div>
+
+</body>
+
+</html>
